@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Astro Coin — $ASTRO</title>
+<style>
+:root{--bg1:#1a0033;--bg2:#2b0064;--bg3:#4b0da6;--mut:#ffffffcc}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica,Arial,sans-serif;background:linear-gradient(to bottom,var(--bg1),var(--bg2),var(--bg3));color:#fff}
+.wrap{max-width:960px;margin:0 auto;padding:28px} .btn{display:inline-block;padding:10px 16px;border-radius:12px;background:#fff;color:#000;text-decoration:none;font-weight:700}
+h1{margin:0 0 6px 0} .muted{color:var(--mut)} .card{background:rgba(255,255,255,.1);padding:16px;border-radius:12px;margin-top:12px} code{word-break:break-all}
+</style></head>
+<body>
+<div class="wrap">
+  <h1>Astro Coin — $ASTRO</h1>
+  <p class="muted">Space-themed parody memecoin. 0% tax • Fixed supply. Not investment advice.</p>
+  <p>
+    <a id="buyLink" class="btn" target="_blank" rel="noreferrer">Buy</a>
+    <a id="dexLink" class="btn" target="_blank" rel="noreferrer" style="margin-left:8px">Trade</a>
+    <a id="tgLink" class="btn" target="_blank" rel="noreferrer" style="margin-left:8px">Telegram</a>
+    <a id="twLink" class="btn" target="_blank" rel="noreferrer" style="margin-left:8px">X</a>
+  </p>
+  <div class="card">
+    <div style="font-size:12px;letter-spacing:.15em;opacity:.8;text-transform:uppercase">Mint</div>
+    <code id="mintText"></code>
+  </div>
+</div>
+<script>
+// ===== EDIT THESE 5 VALUES =====
+const MINT='PASTE_MINT';
+const BUY_LINK='https://pump.fun/coin/PASTE_MINT';
+const DEX_LINK='https://pumps.fun/swap/PASTE_MINT';
+const TELEGRAM='https://t.me/yourtg';
+const TWITTER='https://x.com/yourx';
+// ===== APPLY =====
+document.getElementById('mintText').textContent=MINT;
+document.getElementById('buyLink').href=BUY_LINK;
+document.getElementById('dexLink').href=DEX_LINK;
+document.getElementById('tgLink').href=TELEGRAM;
+document.getElementById('twLink').href=TWITTER;
+</script>
+</body></html>
